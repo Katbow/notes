@@ -6,22 +6,22 @@ This is a compilation of commands you can use in terminal to help you navigate &
 
 | Command | Options<sup>1</sup> | Arguments | Description | Examples |
 |---------|---------|-----------|-------------|----------|
-| pwd | | none | Shows the current working directory | |
-| ls | | none | Lists files and directories in the current working directory| |
-| ls | -a | | Also lists hidden content (those beginning with .) | |
-| ls | -l | | Lists the long format<sup>2</sup> of the contents of a directory| |
-| ls | -t | | Lists contents by date modified | |
-| cd | | directoryname/ | Changes directory to the selected directory | |
-| cd | .. | | Changes to parent directory | |
-| mkdir | | directoryname | Makes new directory with given name | |
-| touch | | filename.txt | Makes new file with given name and extension | |
-| cp | | | content to copy | Copies the selected content. Can also include the directory to copy it to with a space after the content to be copied | | 
-| cp | | * directoryname/ | Copies all files in working directory to selected directory| |
-| cp | | m*.txt directoryname/ | Copies files that begin with m and end with .txt to the selected directory | |
-| mv | | filename.txt directoryname/ | Moves the selected file(s) to the selected directory | |
-| mv | | filename1.txt filename2.txt | Renames the filename1 (which is a file that is you already have) to the new filename2.txt | |
-| rm | filename.txt or directoryname/ | Removes or deletes the selected content | |
-| rm | -r | directoryname/ | removes the selected directory, and all its child content | |
+| `pwd` | | none | Shows the current working directory | |
+| `ls` | | none | Lists files and directories in the current working directory| |
+| `ls` | `-a` | | Also lists hidden content (those beginning with .) | |
+| `ls` | `-l` | | Lists the long format<sup>2</sup> of the contents of a directory| |
+| `ls` | `-t` | | Lists contents by date modified | |
+| `cd` | | directoryname/ | Changes directory to the selected directory | |
+| `cd` | `..` | | Changes to parent directory | |
+| `mkdir` | | directoryname | Makes new directory with given name | |
+| `touch` | | filename.txt | Makes new file with given name and extension | |
+| `cp` | | content to copy | Copies the selected content. Can also include the directory to copy it to with a space after the content to be copied | | 
+| `cp` | | * directoryname/ | Copies all files in working directory to selected directory| |
+| `cp` | | m*.txt directoryname/ | Copies files that begin with m and end with .txt to the selected directory | |
+| `mv` | | filename.txt directoryname/ | Moves the selected file(s) to the selected directory | |
+| `mv` | | filename1.txt filename2.txt | Renames the filename1 (which is a file that is you already have) to the new filename2.txt | |
+| `rm` | | filename.txt | Removes or deletes the selected file | |
+| `rm` | `-r` | directoryname/ | removes the selected directory, and all its child content | |
 
 1. Options can also be combined. For example, you can use ```-a```,``` -l```, ```-t``` all together with ```ls``` as: ```ls -alt ```. This will ```a``` list all files (including hidden files), ```l``` in long format, and ```t``` sorted by date modified.
 2. Long Format includes seven columns separated by spaces. The meaning of each column, in order is:
